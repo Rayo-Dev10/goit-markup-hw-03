@@ -1,0 +1,142 @@
+/*:::Importar fuentes de Google Fonts:::*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*:::Final importar fuentes de Google Fonts:::*/
+
+/*:::Definición de variables para la paleta de colores y fuentes:::*/
+:root {
+  /* Fuentes */
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+  /* Colores */
+  --color-text: #212121;
+  --color-background: #f0f0f0;
+  --color-focus: #2196f3;
+  --color-focus-text: #ffffff;
+  --color-backgrounf-btn: #f5f4fa;
+  --color-background-footer: #2f303a;
+  --color-recomendations-category: #757575;
+}
+/*:::final Definición de variables para la paleta de colores y fuentes:::*/
+
+/*:::Estilos para el cuerpo de la página*/
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+/*:::final Estilos para el cuerpo de la página*/
+
+/* :::Poner color al logo header::: */
+.logo {
+  color: var(--color-focus);
+  font-size: 1, 625rem;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+/* :::Final Poner color al logo header::: */
+
+/* ::: Quitar los estilos::: */
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-text);
+  font-size: 0.875rem;
+}
+/* ::: Final Quitar los estilos::: */
+
+/* :::Establecer color a los links del barNav::: */
+.list-contact {
+  color: var(--color-text);
+}
+/* :::Establecer color a los links del barNav::: */
+
+/* ::: Hover Menu ::: */
+.header-menu li a:hover,
+.header-menu li a:focus {
+  color: var(--color-focus);
+}
+/* ::: Final Hover Menu ::: */
+
+/* :::Estilos de botones::: */
+.botton-subMenu {
+  background-color: var(--color-backgrounf-btn);
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.botton-secondBarNav-active {
+  background-color: var(--color-focus);
+  color: var(--color-focus-text);
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.botton-subMenu:hover,
+.botton-subMenu:focus {
+  background-color: var(--color-focus);
+  color: var(--color-focus-text);
+  border: none;
+  border-radius: 0;
+}
+
+.contact-hover-footer:hover {
+  color: var(--color-focus-text);
+  opacity: 1;
+}
+/* :::Final Estilos de botones::: */
+
+/* :::Articles::: */
+.recommendations-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.recommendations-category {
+  color: var(--color-recomendations-category);
+  font-size: 1rem;
+  opacity: 0.9;
+}
+/* :::Final Articles::: */
+
+/* :::footer::: */
+.footer-line {
+  font-size: 1.625rem;
+}
+
+.site-footer {
+  background-color: var(--color-background-footer);
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.footer-address {
+  color: var(--color-focus-text);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.footer-contact {
+  color: var(--color-focus-text);
+  opacity: 0.4;
+  font-size: 0.875;
+  cursor: pointer;
+}
+
+.contact-hover:hover {
+  color: var(--color-focus);
+}
+/* :::final footerfinal ::: */
+
+
+
+
