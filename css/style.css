@@ -1,142 +1,308 @@
 /*:::Importar fuentes de Google Fonts:::*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/*:::Final importar fuentes de Google Fonts:::*/
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+  @import 'node_modules/modern-normalize/modern-normalize.css';
+  /*:::Final importar fuentes de Google Fonts:::*/
 
 /*:::Definición de variables para la paleta de colores y fuentes:::*/
-:root {
-  /* Fuentes */
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Raleway", sans-serif;
-  /* Colores */
-  --color-text: #212121;
-  --color-background: #f0f0f0;
-  --color-focus: #2196f3;
-  --color-focus-text: #ffffff;
-  --color-backgrounf-btn: #f5f4fa;
-  --color-background-footer: #2f303a;
-  --color-recomendations-category: #757575;
-}
+  :root {
+    /* Fuentes */
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Raleway", sans-serif;
+    /* Colores */
+    --color-text: #212121;
+    --color-background: #f0f0f0;
+    --color-focus: #2196f3;
+    --color-focus-text: #ffffff;
+    --color-backgrounf-btn: #f5f4fa;
+    --color-background-footer: #2f303a;
+    --color-recomendations-category: #757575;
+  }
 /*:::final Definición de variables para la paleta de colores y fuentes:::*/
 
-/*:::Estilos para el cuerpo de la página*/
-body {
-  font-family: var(--font-primary);
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-text);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: auto;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  list-style: none; 
 }
+
+/*:::Estpxilos para el cuerpo de la página*/
+  body {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+  }
 /*:::final Estilos para el cuerpo de la página*/
 
-/* :::Poner color al logo header::: */
-.logo {
-  color: var(--color-focus);
-  font-size: 1, 625rem;
+
+/* header */
+  .site-header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+  }
+
+  .container-logo{
+    display: flex;
+    align-content: center;
+
+  }
+
+  .container-logo a{
+    color: var(--color-focus);
+    font-size: 1.625rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+  }
+
+  .container-navBar-menu{
+    display: flex;
+    align-content: center;
+  }
+  
+  .container-navBar-menu ul{
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    margin-left: -300px;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .container-navBar-menu a,
+  .container-contact a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-text);
+    font-size: 0.875rem;
+  }
+
+  .site-header li a:hover,
+  .site-header li a:focus {
+    color: var(--color-focus);
+}
+
+  .container-contact{
+    display: flex;
+    align-items: center;
+  }
+
+  .container-contact ul{
+    display: flex;
+    gap: 94px;
+    align-content: center;
+  }
+/* Fin header */
+
+/* Seccion primera */
+  main {
+    justify-content: center; 
+    align-items: center; 
+    height: 600px; 
+  }
+
+  .hero {
+    width: 100%;
+    height: 600px;
+    background-color: #2F303A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .second-line{
+    margin-top: -40px;
+  }
+
+  .hero button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 32px;
+    color: white;
+    margin-left: 250px;
+    margin-top: 15px;
+    cursor: pointer;
+    animation: all 1s ease-in-out;
+  }
+
+  .hero button:hover{
+    scale: 1.012;
+  }
+/* Final Seccion primera */
+
+
+
+
+/* Seccion segunda */
+.benefits{
+  display: flex;
+  max-width: 1200px;
+  align-items: baseline;
+  margin: 94px auto 0 auto;
+}
+
+.benefits h2{
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
-  font-family: var(--font-secondary);
-}
-/* :::Final Poner color al logo header::: */
-
-/* ::: Quitar los estilos::: */
-li,
-a {
-  text-decoration: none;
-  list-style: none;
-  color: var(--color-text);
-  font-size: 0.875rem;
-}
-/* ::: Final Quitar los estilos::: */
-
-/* :::Establecer color a los links del barNav::: */
-.list-contact {
-  color: var(--color-text);
-}
-/* :::Establecer color a los links del barNav::: */
-
-/* ::: Hover Menu ::: */
-.header-menu li a:hover,
-.header-menu li a:focus {
-  color: var(--color-focus);
-}
-/* ::: Final Hover Menu ::: */
-
-/* :::Estilos de botones::: */
-.botton-subMenu {
-  background-color: var(--color-backgrounf-btn);
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
-.botton-secondBarNav-active {
-  background-color: var(--color-focus);
-  color: var(--color-focus-text);
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.botton-subMenu:hover,
-.botton-subMenu:focus {
-  background-color: var(--color-focus);
-  color: var(--color-focus-text);
-  border: none;
-  border-radius: 0;
-}
-
-.contact-hover-footer:hover {
-  color: var(--color-focus-text);
-  opacity: 1;
-}
-/* :::Final Estilos de botones::: */
-
-/* :::Articles::: */
-.recommendations-name {
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-
-.recommendations-category {
-  color: var(--color-recomendations-category);
-  font-size: 1rem;
-  opacity: 0.9;
-}
-/* :::Final Articles::: */
-
-/* :::footer::: */
-.footer-line {
-  font-size: 1.625rem;
-}
-
-.site-footer {
-  background-color: var(--color-background-footer);
-}
-
-.site-footer a {
-  text-decoration: none;
-}
-
-address {
-  font-style: normal;
-}
-
-.footer-address {
-  color: var(--color-focus-text);
+.benefits p{
+  color: #757575;
+  font-size: 14;
   font-weight: 400;
-  font-size: 0.875rem;
 }
 
-.footer-contact {
-  color: var(--color-focus-text);
-  opacity: 0.4;
-  font-size: 0.875;
-  cursor: pointer;
+.benefits article{
+  width: calc(100% / 4);
+  align-items:  start;
+  padding: 0 10px;
 }
-
-.contact-hover:hover {
-  color: var(--color-focus);
-}
-/* :::final footerfinal ::: */
+/* Fin Seccion segunda */
 
 
 
 
+/* Seccion tercera */
+  .services{
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    height: 425px;
+    margin-top: 94px;
+  }
+
+  .services h2{
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .services-img{
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .services img{
+    width: calc(100% / 3);
+    padding: 0 10px;
+  }
+/* Fin Seccion tercera */
+
+
+
+
+/* Seccion cuarta */
+  .team{    
+    width: 1600px;
+    height: 648px;
+    background-color: #F5F4FA;
+  }
+
+  .team h2{
+    color: #212121;
+    margin: 50px auto;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .team article{
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .team-information{
+    background-color: white;
+  }
+  
+  .team-information img{
+   width: 270px;
+   justify-items: center;
+  }
+
+  .team-information h3{
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .team-information p{
+    color: #757575;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+/* Fin Seccion cuarta */
+
+
+
+
+
+/* footer */
+
+  .site-footer{
+    width: auto;
+    height: 252px;
+    background-color: #2F303A;
+  }
+
+  .site-footer section{
+    width: 100%;
+    height: 100%;
+  }
+
+  .site-footer article{
+    padding-left: 94px;
+    padding-top: 60px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .site-footer a{
+    color: var(--color-focus);
+    font-size: 1.625rem;
+    font-weight: 700;
+    font-family: var(--font-secondary);
+  }
+
+  .site-footer address{
+    color: white;
+    font-style: normal;
+  }
+  
+  .site-footer p{
+    font-size: 14;
+    color: white;
+    opacity: 0.4;
+  }
+
+  .site-footer p:hover,
+  .site-footer p:focus{
+    color: white;
+    opacity: 1;
+  }
+/* Fin footer */
