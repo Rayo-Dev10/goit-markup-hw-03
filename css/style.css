@@ -47,7 +47,6 @@
     display: flex;
     justify-content: space-around;
     align-content: center;
-
   }
 
   .container-logo{
@@ -124,6 +123,7 @@
     font-size: 60px;
     font-weight: 900;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .second-line{
@@ -141,6 +141,7 @@
     margin-top: 15px;
     cursor: pointer;
     animation: all 1s ease-in-out;
+    font-size: 16px;
   }
 
   .hero button:hover{
@@ -213,28 +214,35 @@
 
 
 /* Seccion cuarta */
-  .team{    
-    width: 1600px;
-    height: 648px;
-    background-color: #F5F4FA;
-  }
 
-  .team h2{
-    color: #212121;
-    margin: 50px auto;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-  }
+.team {    
+ 
+  width: 100%; 
+  height: 100%;
+  background-color: #F5F4FA;
+  margin-top: 5%;
+  padding-top: 3%;
+}
+
+.team h2 {
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
 
   .team article{
     display: flex;
     gap: 20px;
-    margin: 0 auto;
+    margin: 42px auto;
   }
 
   .team-information{
     background-color: white;
+    box-shadow: 0px 2px 1px 0px #00000033;
   }
   
   .team-information img{
@@ -255,6 +263,7 @@
     font-size: 16px;
     text-align: center;
     margin-bottom: 40px;
+    
   }
 /* Fin Seccion cuarta */
 
